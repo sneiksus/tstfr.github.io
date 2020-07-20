@@ -530,6 +530,62 @@ footer h4{
 }
 
 
+@media (max-width: 575px){
+    .header{
+        height: auto;
+    }
+    .first-header{
+        font-size: 25px;
+        margin: 0px;
+        margin-top: 70px;
+    }
+    .main-info{
+        height: 100%;
+        margin-top: 100px;
+      background-image: none;
+      background-color: #292929;
+    }
+    .logo{
+        width: 175px;
+        height: 60px;
+        margin-left: 50%;
+       transform: translateX(-50%);
+   }
+.main-descp{
+    font-size: 17px;
+    margin-left: 3px;
+}
+.second-header{
+    margin-top: 25px;
+    font-size: 22px;
+}
+.all-cars{
+    font-size: 18px;
+    height: auto;
+    vertical-align: middle;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.p-first{
+    font-size: 22px;
+}
+.p-second{
+    font-size: 27px;
+}
+.p-third{
+    font-size: 22px;
+    margin-top: 16px;
+}
+footer{
+    height: auto;
+}
+
+.marg-l-40{
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+}
 
 
 
