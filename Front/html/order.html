@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fresh auto</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/tab-icon-min.png" />
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-3 align-self-center">
+                    <a href="index.html">
+                    <img class="logo " src="../images/logo-min.png" alt="fresh auto">
+                </a>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <nav>
+                        <a href="index.html">Головна</a>
+                        <a href="catalog.html">Каталог</a>
+                        <a href="order.html">Замовлення авто</a>
+                        <a href="services.html">Про нас</a>
+                        <a href="contact.html">Контакти</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="order">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3">
+                    <h2 class="auto-order">Авто під замовлення</h2>
+                </div>
+            </div>
+            <form id="frm" method="POST" action="https://localhost:44369/User/sendOrder">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <input class="contact-input" required name="Name" maxlength="30" placeholder="Ім'я" type="text" >
+                    <input class="contact-input"required name="Phone" value="+380" pattern="^\+?3?8?(0[5-9][0-9]\d{7})$" maxlength="15" placeholder="Телефон" type="text" >
+                    <input class="contact-input" name="Email" maxlength="30" placeholder="Пошта" type="text" >
+                    <input class="contact-input" name="Mark" maxlength="30" placeholder="Марка" type="text" >
+                    <input class="contact-input" name="Model" maxlength="50" placeholder="Модель" type="text" >
+                </div>
+                <div class="col-lg-5">
+                    <input class="contact-input" name="Year" maxlength="4" placeholder="Рік випуску" type="text" >
+                    <input class="contact-input" name="Km" maxlength="6" placeholder="Пробіг" type="text" >
+                    <select name="Fuel">
+                        <option disabled selected hidden>Паливо</option>
+                        <option>Бензин</option>
+                        <option>Дизель</option>
+                        <option>Електро</option>
+                        <option>Гібрид</option>
+                      </select>
+                      <select name="Transmission">
+                        <option disabled selected hidden>Коробка</option>
+                        <option>Автомат</option>
+                        <option>Механіка</option>
+                      </select>
+                    <input class="contact-input" name="Comentar" placeholder="Коментар" maxlength="100" type="text" >
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-lg-4">
+                    <a href="#" onclick="document.getElementById('frm').submit()" type="button" class="send-order">Відправити</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3">     
+                        <h4>Про нас</h4>
+                        <p>Pretium maecenas nostra dictumst tempus facilisi, quam tincidunt eu odio
+                           porta. Luctus ridiculus dictum auctor. Sed suspendisse magnis placerat turpis dolor etiam class
+                           in habitant consequat</p>
+                </div>
+                <div class="col-lg-3 marg-l-40">     
+                   <h4>Графік роботи</h4>
+                    <p class="pre">Понеділок    9:00-18:00<br>Вівторок       9:00-18:00<br>Середа         9:00-18:00<br>Четвер         9:00-18:00<br>П'ятниця      9:00-18:00<br>Субота          Вихідний<br>Неділя          Вихідний     </p>
+                 </div>
+                 <div class="col-lg-3 marg-l-40">
+                     <h4>Контакти</h4>
+                     <p><i class="fa f fa-map-marker" aria-hidden="true"></i> Шевченка 34п<br><br><i class="fa f fa-envelope" aria-hidden="true"></i> info@mail.com<br><br><i class="fa f fa-mobile" aria-hidden="true"></i> +380 093 000 00 00</p>
+                 </div>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/order.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+</html>

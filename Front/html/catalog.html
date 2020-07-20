@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>fresh auto</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/tab-icon-min.png" />
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-3 align-self-center">
+                    <a href="index.html">
+                    <img class="logo " src="../images/logo-min.png" alt="fresh auto">
+                </a>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <nav>
+                        <a href="index.html">Головна</a>
+                        <a href="catalog.html">Каталог</a>
+                        <a href="order.html">Замовлення авто</a>
+                        <a href="services.html">Про нас</a>
+                        <a href="contact.html">Контакти</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<section class="car-list">
+   <div class="container">
+       <button id="menubtn" class="menubtn">Фільтри</button>
+       <div id="menu" class=" menu">
+           <div>          
+               <p id="X"><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></p>
+               <p class="param">Марка</p>
+            <select id="mark" class="sel">
+                <option class="opt" disabled selected hidden>Марка</option>
+	            <option class="opt">Audi</option>
+                <option class="opt">BMW</option>
+                <option class="opt">Chevrolet</option>
+                <option class="opt">Citroen</option>
+                <option class="opt">Ford</option>
+                <option class="opt">Fiat</option>
+                <option class="opt">Honda</option>
+                <option class="opt">Hyundai</option>
+                <option class="opt">Jaguar</option>
+                <option class="opt">Kia</option>
+                <option class="opt">Land Rover</option>
+	            <option class="opt">Lexus</option>
+                <option class="opt"">Mazda</option>
+                <option class="opt">Mercedes</option>
+                <option class="opt"">Mitsubishi</option>
+                <option class="opt">Nissan</option>
+                <option class="opt">Opel</option>
+                <option class="opt">Peugeot</option>
+                <option class="opt">Porsche</option>
+                <option class="opt">Renault</option>
+                <option class="opt">Seat</option>
+	            <option class="opt">Skoda</option>
+	            <option class="opt"">Subaru</option>
+                <option class="opt"">Suzuki</option>
+                <option class="opt">Tesla</option>
+	            <option class="opt"">Toyota</option>
+                <option class="opt"">Volkswagen</option>
+                <option class="opt">Volvo</option>
+              </select>
+            </div>
+           <div>
+            <p class="param">Паливо</p>
+         <select id="fuel" class="sel">
+            <option class="opt" disabled selected hidden>Паливо</option>
+            <option class="opt">Бензин</option>
+            <option class="opt">Дизель</option>
+            <option class="opt">Електро</option>
+            <option class="opt">Гібрид</option>
+           </select>
+        </div>
+        <div>
+            <p class="param">Коробка</p>
+         <select id="trans" class="sel">
+             <option class="opt" disabled selected hidden>Коробка</option>
+             <option class="opt">Автомат</option>
+             <option class="opt">Механіка</option>
+           </select>
+         </div>
+         <div>
+            <p class="param">Макс. пробіг: <output id="mkv"></output> км</p>
+            <input class="slider"  id="max-km" oninput="mkv.value=this.value" type="range" min="0" max="300000" step="2500" value="300000">
+         </div>
+         <div>
+            <p class="param" >Макс. ціна: <output id="mp"></output> €</p>
+            <input class="slider" id="max-price" oninput="mp.value=this.value" type="range" min="3000" max="50000" step="1000" value="50000">
+         </div>
+         <div>
+            <p class="param" >Мін. потужність: <output id="mpw"></output> кВт</p>
+            <input class="slider" id="min-pw" oninput="mpw.value=this.value" type="range" min="50" max="400" step="5" value="50">
+         </div>
+         <a type="button" id="select" class="send-msg">Обрати</a>   
+         <a type="button" id="reset" ><i class="fa fa-refresh fa-3x" aria-hidden="true"></i></a>   
+        </div>
+
+        <div id="list-car-catalog">
+        
+       </div>
+   
+       <div class="row justify-content-end">
+        <button id="load-else" class="all-cars load-else col-lg-3">Завантажити ще</button>
+    </div>
+   </div>
+</section>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3">     
+                        <h4>Про нас</h4>
+                        <p>Pretium maecenas nostra dictumst tempus facilisi, quam tincidunt eu odio
+                           porta. Luctus ridiculus dictum auctor. Sed suspendisse magnis placerat turpis dolor etiam class
+                           in habitant consequat</p>
+                </div>
+                <div class="col-lg-3 marg-l-40">     
+                   <h4>Графік роботи</h4>
+                    <p class="pre">Понеділок    9:00-18:00<br>Вівторок       9:00-18:00<br>Середа         9:00-18:00<br>Четвер         9:00-18:00<br>П'ятниця      9:00-18:00<br>Субота          Вихідний<br>Неділя          Вихідний     </p>
+                 </div>
+                 <div class="col-lg-3 marg-l-40">
+                     <h4>Контакти</h4>
+                     <p><i class="fa f fa-map-marker" aria-hidden="true"></i> Шевченка 34п<br><br><i class="fa f fa-envelope" aria-hidden="true"></i> info@mail.com<br><br><i class="fa f fa-mobile" aria-hidden="true"></i> +380 093 000 00 00</p>
+                 </div>
+            </div>
+        </div>
+    </footer>
+
+
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/font-awesome.min.css">
+   <link rel="stylesheet" href="../css/style.css">
+   <script src="../js/jquery-3.5.1.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+   <script src="../js/catalog.js"></script>
+   <script src="../js/header.js"></script>
+</body>
+</html>
